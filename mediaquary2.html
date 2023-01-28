@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS media query</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: blanchedalmond;
+        }
+
+        .div1 {
+            font-size: 40px;
+            font-weight: bolder;
+            color: lightgreen;
+        }
+
+        @media screen and (max-width:800px) {
+            body {
+                text-align: center;
+                background-color: gray;
+            }
+
+            .div1{
+                font-size: 30px;
+                font-weight: bold;
+                color: black;
+            }
+
+            .div2 {
+                color: white;
+            }
+        }
+
+        @media screen and (max-width:500px) {
+            body {
+                text-align: center;
+                background-color:black;
+                border: 1px solid black;
+                color: aqua;
+            }
+            .div1{
+                color: aqua;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">Effect on screen</div>
+    <div class="div2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nisi ad praesentium nostrum
+        quisquam, non debitis eaque velit aspernatur. Eligendi aspernatur explicabo consequatur voluptate voluptates sit
+        reiciendis quidem, quas rem. Fugit qui quisquam libero!
+
+    </div>
+</body>
+
+</html>

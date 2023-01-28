@@ -1,0 +1,107 @@
+<!--DATE 18/01/2023
+  Today taskes:
+  changing backgrounds by using css.
+  some information about id and class.
+  some knowldge of selector operatores.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("nature.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .registration{
+            width: 400px;
+            padding: 40px 200px 40px 200px;
+            background-color: rgba(0,0,0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="registration">
+        <legend>
+            <h1>Registration Form</h1>
+        </legend>
+        <form>
+            <div class="container">
+
+                <div class="fname">
+                    <label>FIRST NAME:</label>
+                    <input type="text" id="name" placeholder="Enter your first name">
+                </div><br>
+                <div class="lname">
+                    <label>LAST NAME:</label>
+                    <input type="text" id="name" placeholder="Enter your Last name">
+                </div><br>
+                <div class="age">
+                    <label>AGE:</label>
+                    <input type="number" id="age" placeholder="Enter your Age">
+                </div> <br>
+                <div class="gender">
+                    GENDER:
+                    <input type="radio" value="male" id="male" name="gender">
+                    <label for="male">MALE</label>
+                    <input type="radio" value="female" id="female" name="gender">
+                    <label for="female">FEMALE</label>
+                </div><br>
+                <fieldset id="flan">
+                    <legend> KNOWN LANGUAGES:</legend>
+                    <div class="fcontain">
+                        <input type="checkbox" id="hindi">
+                        <label for="hindi">HINDI</label><br>
+                        <input type="checkbox" id="english">
+                        <label for="english">ENGLISH</label><br>
+                        <input type="checkbox" id="urdu">
+                        <label for="urdu">URDU</label><br>
+                    </div>
+                </fieldset><br>
+                <div id="branch">
+                    <label>BRANCH</label>
+                    <select>
+                        <option value="BCA">BCA</option>
+                        <option value="MCA">MCA</option>
+                        <option value="BScIT">BScIT</option>
+                        <option value="MScIT">MScIT</option>
+                        <option value="BBA">BBA</option>
+                        <option value="BCOM">BCOM</option>
+                    </select>
+                </div>
+                <br>
+                <div class="email">
+                    <label>EMAIL:</label>
+                    <input type="email" id="email" placeholder="Enter your valid email id">
+                </div><br>
+                <div class="pass">
+                    <label>PASSWORD:</label>
+                    <input type="password" id="password" placeholder="Enter your valid password">
+                </div>
+                <br>
+                <div class="sum">
+                    <input type="submit">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset">
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body{
+      width: 100%;
+    }
+
+    .navigation {
+      overflow: hidden;
+      background-color: rgb(122, 53, 117);
+      margin-right: 10px;
+    }
+
+    .navigation a {
+      float: left;
+      display: block;
+      color: #ffffff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+
+    .navigation a:hover {
+      background-color: rgba(65, 126, 134, );
+      color:rgb(0, 0, 0);
+      transition: color 1s;
+      transition-property: margin-right;
+    }
+
+
+    @media screen and (max-width: 600px) {
+      .navigation a {
+        float: none;
+        width: 100%;
+        background-color: aqua;
+        color: rgb(84, 57, 160);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navigation">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+</body>
+
+</html>
